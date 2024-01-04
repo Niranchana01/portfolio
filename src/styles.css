@@ -13,13 +13,14 @@ body {
   padding: 0;
   width: 100%;
 }
-
 div#main {
   display: flex;
   flex-direction: column;
   width: 100vw;
 }
-
+#title {
+  color:white;
+}
 section {
   position: relative;
   width: 100vw;
