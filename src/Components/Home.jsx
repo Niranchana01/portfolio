@@ -21,6 +21,7 @@ import PropTypes from "prop-types";
  * freely use on your site.
  */
 import image from "../images/background.jpg";
+import About from "./About";
 
 const imageAltText = "Mountains with Tents and dark sky" ;
 
@@ -33,7 +34,8 @@ const Home = ({ name, title }) => {
         <h2>{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+      <a href="#about">
+        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} /></a>
       </div>
     </section>
   );

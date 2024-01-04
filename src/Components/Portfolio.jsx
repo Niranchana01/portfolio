@@ -19,8 +19,8 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/passport photo.jpg";
-
+import image from "../images/about.jpg";
+import avatar from "../images/avatar.avif";
 const imageAltText = "Niranchana Shree's photo";
 
 /**
@@ -31,28 +31,28 @@ const imageAltText = "Niranchana Shree's photo";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Visionmate for the visually impaired",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Made a smart stick for the visually impaired people to help them navigate through the world with ease. It is an IOT based project using Arduino and ultrasonic sensors.",
+    url: "",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Salon Website",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "As a beginner to web development, I created a salon website using HTML and CSS. It is a static website with a few pages. Github pages is used to deploy the website.",
+    url: "https://niranchana01.github.io/salonweb/index.html",
   },
   {
-    title: "My Resume Site",
+    title: "Resume Website",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Created a resume website using HTML and CSS. It is a static website with a few pages.",
+    url: "https://niranchanaportfolio.netlify.app/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Word Game",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Developed a console based word game using Python. It is a simple game where the user has to guess the word with the help of hints. Just a fun project to learn Python.",
+    url: "",
   },
 ];
 
@@ -62,11 +62,10 @@ const Portfolio = () => {
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "100%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
+        <img className="background" src={image} alt={imageAltText} />
+        </div>
+        <div id="avatar">
+        <img src={avatar} style={{ height: "300px", width: "300px" }} alt={imageAltText} />
         </div>
         <div className="container">
           {projectList.map((project) => (
