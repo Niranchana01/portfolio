@@ -65,7 +65,7 @@ const Portfolio = () => {
         <img className="background" src={image} alt={imageAltText} />
         </div>
         <div id="avatar">
-        <img src={avatar} style={{ height: "300px", width: "300px" }} alt={imageAltText} />
+        <img src={avatar} style={{ height: "300px", width: "200px", objectFit: "cover", animation: "1s ease-out 0s 1 slideIn" }} />
         </div>
         <div className="container">
           {projectList.map((project) => (

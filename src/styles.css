@@ -6,6 +6,8 @@
 
 html,
 body {
+  /*add a smooth scrolling effect*/
+  scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
   height: 100%;
   margin: 0;
@@ -127,4 +129,13 @@ img.socialIcon {
 }
 #avatar {
   padding-left: 30px;
+}
+/* add a slide in animation*/
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
