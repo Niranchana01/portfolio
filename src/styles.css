@@ -133,9 +133,42 @@ img.socialIcon {
 /* add a slide in animation*/
 @keyframes slideIn {
   0% {
+    opacity: 0;
     transform: translateX(-100%);
   }
   100% {
+    opacity: 1;
     transform: translateX(0);
+  }
+}
+#education {
+  text-align: center;
+  /*set the size to 100% of the viewport*/
+  width: 100vw;
+  /*increase the height to 100% of the viewport*/
+  height: 100vh;
+}
+#education h1{
+  padding:10px 0;
+}
+
+/*add grid layout to the class education__container--right*/
+#education img{
+  opacity: 0.3;
+}
+/*animate the arrow id to bounce*/
+#arrow{
+  animation: bounce 2s infinite;
+}
+/*add a keyframe to the bounce animation*/
+@keyframes bounce{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0);
   }
 }
